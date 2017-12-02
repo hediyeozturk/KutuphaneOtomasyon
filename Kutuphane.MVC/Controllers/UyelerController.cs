@@ -6,9 +6,9 @@ using System.Web.Mvc;
 
 namespace Kutuphane.MVC.Controllers
 {
-    public class KitapController : Controller
+    public class UyelerController : Controller
     {
-        // GET: Kitap
+        // GET: Uyeler
         public ActionResult Liste()
         {
             return View();

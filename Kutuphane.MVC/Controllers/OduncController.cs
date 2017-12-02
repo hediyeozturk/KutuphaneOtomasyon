@@ -6,9 +6,9 @@ using System.Web.Mvc;
 
 namespace Kutuphane.MVC.Controllers
 {
-    public class KitapController : Controller
+    public class OduncController : Controller
     {
-        // GET: Kitap
+        // GET: Odunc
         public ActionResult Liste()
         {
             return View();
@@ -19,17 +19,12 @@ namespace Kutuphane.MVC.Controllers
             return View();
         }
 
-        public ActionResult Ekle()
+        public ActionResult OduncVer()
         {
             return View();
         }
 
-        public ActionResult Sil()
-        {
-            return RedirectToAction("Listele");
-        }
-
-        public ActionResult Guncelle()
+        public ActionResult OduncTeslim()
         {
             return View();
         }
