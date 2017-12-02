@@ -10,21 +10,21 @@
     <link href="~/vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
     <link href="~/dist/css/sb-admin-2.css" rel="stylesheet">
     <link href="~/vendor/morrisjs/morris.css" rel="stylesheet">
-    <link href="~/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="~/vendor/font-awesome/css/font-awesome.css" rel="stylesheet" />
     <title>@ViewBag.Title</title>
 </head>
 <body>
     <div id="wrapper">
         <!-- Navigation -->
         <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
-            <div class="navbar-header">
+            <div class="navbar-header ">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                     <span class="sr-only">Menu</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">KÜTÜPHANE</a>
+                <a class="navbar-brand fa fa-bookmark fa-2x" href="index.html" style="color:brown"><b>  KÜTÜPHANEM</b></a>
             </div>
             <ul class="nav navbar-top-links navbar-right">
                 <li class="dropdown">
@@ -178,35 +178,35 @@
                             <!-- /input-group -->
                         </li>
                         <li>
-                            <a href="#"><i class="fa fa-home fa-fw"></i>Anasayfa</a>
+                            <a class="btn-outline btn-danger" href="#"><i class="fa fa-home fa-2x"></i>Anasayfa</a>
                         </li>
                         <li>
-                            <a href="#"><i class="fa fa-book fa-fw"></i> Kitaplar <span class="fa arrow"></span></a>
+                            <a href="#" class="btn-outline btn-danger" ><i class="fa fa-book fa-2x"></i> Kitaplar <span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
-                                    <a href="#">Edebiyat<span class="fa arrow"></span></a>
+                                    <a href="#" class="btn-outline btn-danger" >Edebiyat<span class="fa arrow"></span></a>
                                 </li>
                                 <li>
-                                    <a href="#">Bilim Kurgu<span class="fa arrow"></span></a>
+                                    <a href="#" class="btn-outline btn-danger" >Bilim Kurgu<span class="fa arrow"></span></a>
                                 </li>
                                 <li>
-                                    <a href="#">Eğitim Başvuru<span class="fa arrow"></span></a>
+                                    <a href="#" class="btn-outline btn-danger" >Eğitim Başvuru<span class="fa arrow"></span></a>
                                 </li>
                             </ul>
                         </li>
                         <li>
-                            <a href="#"><i class="fa fa-edit fa-fw"></i>Yazarlar<span class="fa arrow"></span></a>
+                            <a href="#" class="btn-outline btn-danger" ><i class="fa fa-edit fa-2x"></i>Yazarlar<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
-                                    <a href="#">Türk Yazarlar<span class="fa arrow"></span></a>
+                                    <a href="#" class="btn-outline btn-danger" >Türk Yazarlar<span class="fa arrow"></span></a>
                                 </li>
                                 <li>
-                                    <a href="#">Yabancı Yazarlar<span class="fa arrow"></span></a>
+                                    <a href="#" class="btn-outline btn-danger" >Yabancı Yazarlar<span class="fa arrow"></span></a>
                                 </li>
                             </ul>
                         </li>
                         <li>
-                            <a href="#"><i class="fa fa-sitemap fa-fw"></i> Multi-Level Dropdown<span class="fa arrow"></span></a>
+                            <a href="#" class="btn-outline btn-danger" ><i class="fa fa-sitemap fa-fw"></i> Multi-Level Dropdown<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
                                     <a href="#">Second Level Item</a>
@@ -253,7 +253,7 @@
             </div>
             <!-- /.navbar-static-side -->
         </nav>
-        <div id="page-wrapper">
+        <div id="page-wrapper" >
 
             @RenderBody()
         </div>
