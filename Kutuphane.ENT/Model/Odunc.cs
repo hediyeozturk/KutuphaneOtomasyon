@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Kutuphane.ENT.IdentityModel;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -22,7 +23,10 @@ namespace Kutuphane.ENT.Model
         [ForeignKey("KitapID")]
         public virtual Kitap Kitap { get; set; }
 
-        //[ForeignKey("UyeID")] //Uyeleri bağla
-        //[ForeignKey("KullaniciID")] //kullanıcıları bağla
+        [ForeignKey("UyeID")]
+        public virtual Uye Uye { get; set; }
+
+        [ForeignKey("KullaniciID")]
+        public virtual Kullanici Kullanici { get; set; }
     }
 }

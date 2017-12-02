@@ -11,8 +11,12 @@ namespace Kutuphane.ENT.Model
     [Table("Kitaplar")]
     public class Kitap : BaseModel
     {
-        [Required]
-        [StringLength(75, ErrorMessage ="Bu alan zorunludur")]
+        [Required(ErrorMessage ="Bu alan zorunludur")]
         public string KitapAdi { get; set; }
+        public int YazarID { get; set; }
+        public bool Rafta { get; set; } = true;
+
+        [ForeignKey("YazarID")]
+        public virtual Yazar Yazar { get; set; }
     }
 }

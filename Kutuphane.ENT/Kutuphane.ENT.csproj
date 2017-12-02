@@ -74,9 +74,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="IdentityModel\Kullanici.cs" />
+    <Compile Include="IdentityModel\Rol.cs" />
     <Compile Include="Model\BaseModel.cs" />
     <Compile Include="Model\Kitap.cs" />
     <Compile Include="Model\Odunc.cs" />
+    <Compile Include="Model\Uye.cs" />
+    <Compile Include="Model\Yazar.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -84,7 +88,6 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="IdentityModel\" />
     <Folder Include="ViewModel\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
