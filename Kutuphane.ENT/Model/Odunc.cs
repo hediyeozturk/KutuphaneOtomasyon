@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 
 namespace Kutuphane.ENT.Model
 {
+    [Table("Odunc")]
     public class Odunc : BaseModel
     {
         public DateTime AlisTarihi { get; set; }

@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 
 namespace Kutuphane.ENT.IdentityModel
 {
+    [Table("Kullanici")]
     public class Kullanici : IdentityUser
     {
         public string Ad { get; set; }

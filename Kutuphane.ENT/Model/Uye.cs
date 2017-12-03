@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 
 namespace Kutuphane.ENT.Model
 {
+    [Table("Uye")]
     public class Uye :BaseModel
     {
         public string Ad { get; set; }
