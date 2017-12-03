@@ -12,8 +12,7 @@ namespace Kutuphane.ENT.Model
     {
         public string Ad { get; set; }
         public string Soyad { get; set; }
-        [Column(TypeName = "smalldatetime")]
-        public DateTime KayitTarihi { get; set; } = DateTime.Now;
 
+        public virtual List<Odunc> Odunc { get; set; } = new List<Odunc>();
     }
 }

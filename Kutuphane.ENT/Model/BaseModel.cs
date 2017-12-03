@@ -14,6 +14,6 @@ namespace Kutuphane.ENT.Model
         public int id { get; set; }
         public bool isActive { get; set; } = true;
         [Column(TypeName = "smalldatetime")]
-        public DateTime CreationDate { get; set; } = DateTime.Now;
+        public DateTime KayitTarihi { get; set; } = DateTime.Now;
     }
 }
