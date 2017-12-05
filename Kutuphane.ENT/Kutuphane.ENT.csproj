@@ -83,6 +83,7 @@
     <Compile Include="Model\Uye.cs" />
     <Compile Include="Model\Yazar.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModel\KitapEkleViewModel.cs" />
     <Compile Include="ViewModel\KitaplarViewModel.cs" />
     <Compile Include="ViewModel\OdunclerViewModel.cs" />
     <Compile Include="ViewModel\RegisterViewModel.cs" />

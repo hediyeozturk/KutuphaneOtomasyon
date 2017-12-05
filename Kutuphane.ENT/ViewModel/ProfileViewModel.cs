@@ -17,13 +17,13 @@ namespace Kutuphane.ENT.ViewModel
         public string Id { get; set; }
         [Display(Name = "Ad")]
         [StringLength(25)]
-        public string Name { get; set; }
+        public string Ad { get; set; }
         [Required]
         [Display(Name = "Soyad")]
-        public string Surname { get; set; }
+        public string Soyad { get; set; }
         [Required]
         [Display(Name = "Kullanıcı Adı")]
-        public string UserName { get; set; }
+        public string KullaniciAdi { get; set; }
        
     }
     public class PasswordViewModel
