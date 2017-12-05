@@ -11,7 +11,7 @@ namespace Kutuphane.ENT.Model
     public class BaseModel
     {
         [Key]
-        public int id { get; set; }
+        public int ID { get; set; }
         public bool isActive { get; set; } = true;
         [Column(TypeName = "smalldatetime")]
         public DateTime KayitTarihi { get; set; } = DateTime.Now;
