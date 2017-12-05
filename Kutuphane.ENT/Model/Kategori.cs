@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Kutuphane.ENT.Model
 {
-    [Table("Kitaplar")]
+    [Table("Kategori")]
     public class Kategori:BaseModel
     {
         [Required(ErrorMessage ="Bu alanı girmek zorunlu")]
@@ -19,5 +19,7 @@ namespace Kutuphane.ENT.Model
         public virtual Kategori UstKategori { get; set; }
 
         public virtual List<Kategori> AltKategori { get; set; } = new List<Kategori>();
+
+        public virtual List<Kitap> Kitap { get; set; } = new List<Model.Kitap>();
     }
 }

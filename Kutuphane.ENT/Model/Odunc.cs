@@ -19,7 +19,7 @@ namespace Kutuphane.ENT.Model
         [Required]
         public int UyeID { get; set; }
         [Required]
-        public int KullaniciID { get; set; }
+        public string KullaniciID { get; set; }
 
         [ForeignKey("KitapID")]
         public virtual Kitap Kitap { get; set; }

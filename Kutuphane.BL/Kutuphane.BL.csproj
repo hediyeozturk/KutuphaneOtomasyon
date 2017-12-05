@@ -81,5 +81,15 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Kutuphane.DL\Kutuphane.DL.csproj">
+      <Project>{787853d7-e206-4c1d-a641-96b79c281a0e}</Project>
+      <Name>Kutuphane.DL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Kutuphane.ENT\Kutuphane.ENT.csproj">
+      <Project>{c87eabf8-ab25-4016-8407-2d8d59a89cc5}</Project>
+      <Name>Kutuphane.ENT</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

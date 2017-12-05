@@ -311,10 +311,21 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
+    <Folder Include="Views\Categories\" />
     <Folder Include="Views\Kitap\" />
     <Folder Include="Views\Kullanici\" />
     <Folder Include="Views\Odunc\" />
     <Folder Include="Views\Uyeler\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Kutuphane.BL\Kutuphane.BL.csproj">
+      <Project>{7d6f5cd3-8e70-43c1-b2a9-7d77fb2648e7}</Project>
+      <Name>Kutuphane.BL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Kutuphane.ENT\Kutuphane.ENT.csproj">
+      <Project>{c87eabf8-ab25-4016-8407-2d8d59a89cc5}</Project>
+      <Name>Kutuphane.ENT</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

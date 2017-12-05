@@ -17,6 +17,7 @@ namespace Kutuphane.ENT.Model
         public int YazarID { get; set; }
         public int KategoriID { get; set; }
         public bool Rafta { get; set; } = true;
+        public string ResimYolu { get; set; }
 
         [Required]
         [StringLength(17)]
