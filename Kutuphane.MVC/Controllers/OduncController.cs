@@ -9,6 +9,11 @@ namespace Kutuphane.MVC.Controllers
     public class OduncController : Controller
     {
         // GET: Odunc
+        public ActionResult Index()
+        {
+            return View();
+        }
+
         public ActionResult Liste()
         {
             return View();

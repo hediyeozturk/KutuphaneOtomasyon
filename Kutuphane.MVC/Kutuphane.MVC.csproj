@@ -252,7 +252,7 @@
     <Compile Include="Controllers\KitapController.cs" />
     <Compile Include="Controllers\KullaniciController.cs" />
     <Compile Include="Controllers\OduncController.cs" />
-    <Compile Include="Controllers\UyelerController.cs" />
+    <Compile Include="Controllers\UyeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -309,9 +309,9 @@
     <Content Include="vendor\font-awesome\scss\_variables.scss" />
     <Content Include="Views\Shared\_LayoutPage.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\MainPage.cshtml" />
     <Content Include="Scripts\jquery-3.2.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.2.1.min.map" />
+    <Content Include="Views\Kitap\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -323,10 +323,10 @@
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
     <Folder Include="Views\Categories\" />
-    <Folder Include="Views\Kitap\" />
     <Folder Include="Views\Kullanici\" />
     <Folder Include="Views\Odunc\" />
     <Folder Include="Views\Uyeler\" />
+    <Folder Include="Views\Uye\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Kutuphane.BL\Kutuphane.BL.csproj">

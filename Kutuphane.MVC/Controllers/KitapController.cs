@@ -8,6 +8,10 @@ namespace Kutuphane.MVC.Controllers
 {
     public class KitapController : Controller
     {
+        public ActionResult Index()
+        {
+            return View();
+        }
         // GET: Kitap
         public ActionResult Liste()
         {

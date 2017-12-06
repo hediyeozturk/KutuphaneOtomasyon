@@ -6,9 +6,14 @@ using System.Web.Mvc;
 
 namespace Kutuphane.MVC.Controllers
 {
-    public class UyelerController : Controller
+    public class UyeController : Controller
     {
-        // GET: Uyeler
+        // GET: Uye
+        public ActionResult Index()
+        {
+            return View();
+        }
+
         public ActionResult Liste()
         {
             return View();

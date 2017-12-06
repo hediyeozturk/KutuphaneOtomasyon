@@ -9,6 +9,11 @@ namespace Kutuphane.MVC.Controllers
     public class KullaniciController : Controller
     {
         // GET: Kullanici
+        public ActionResult Index()
+        {
+            return View();
+        }
+
         public ActionResult Liste()
         {
             return View();
