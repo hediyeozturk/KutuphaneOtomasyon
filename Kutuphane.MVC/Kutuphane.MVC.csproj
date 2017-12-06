@@ -147,6 +147,13 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="Scripts\angular-mocks.js" />
+    <Content Include="Scripts\angular-route.js" />
+    <Content Include="Scripts\angular-route.min.js" />
+    <Content Include="Scripts\angular.js" />
+    <Content Include="Scripts\angular.min.js" />
+    <Content Include="Scripts\angular.min.js.map" />
+    <Content Include="Scripts\angular-route.min.js.map" />
     <None Include="Scripts\jquery-3.2.1.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -312,6 +319,9 @@
     <Content Include="Scripts\jquery-3.2.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.2.1.min.map" />
     <Content Include="Views\Kitap\Index.cshtml" />
+    <Content Include="Views\Kitap\Liste.cshtml" />
+    <Content Include="Views\Uye\Index.cshtml" />
+    <Content Include="Views\Odunc\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -324,9 +334,6 @@
     <Folder Include="Models\" />
     <Folder Include="Views\Categories\" />
     <Folder Include="Views\Kullanici\" />
-    <Folder Include="Views\Odunc\" />
-    <Folder Include="Views\Uyeler\" />
-    <Folder Include="Views\Uye\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Kutuphane.BL\Kutuphane.BL.csproj">
