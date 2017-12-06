@@ -13,7 +13,7 @@ namespace Kutuphane.DL.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "201712051437383_ilk"; }
+            get { return "201712061011091_ilk"; }
         }
         
         string IMigrationMetadata.Source

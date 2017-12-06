@@ -21,5 +21,16 @@ namespace Kutuphane.DL
         public virtual DbSet<Odunc> Odunc { get; set; }
         public virtual DbSet<Yazar> Yazar { get; set; }
         public virtual DbSet<Kategori> Kategori { get; set; }
+
+        protected override void OnModelCreating(System.Data.Entity.DbModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+            modelBuilder.Entity<IdentityUser>()
+                .ToTable("Kullanici", "dbo").Property(p => p.Id).HasColumnName("KullaniciID");
+            modelBuilder.Entity<Kullanici>()
+                .ToTable("Kullanici", "dbo").Property(p => p.Id).HasColumnName("KullaniciID");
+
+
+        }
     }
 }

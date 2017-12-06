@@ -9,8 +9,8 @@ using System.Threading.Tasks;
 
 namespace Kutuphane.ENT.IdentityModel
 {
-    [Table("Roll")]
-    public class Rol : IdentityUser
+    [Table("Rol")]
+    public class Rol : IdentityRole
     {
         public string Aciklama { get; set; }
     }

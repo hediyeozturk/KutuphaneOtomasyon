@@ -45,8 +45,8 @@
     <Reference Include="Microsoft.AspNet.Identity.Owin, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.AspNet.Identity.Owin.2.2.1\lib\net45\Microsoft.AspNet.Identity.Owin.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.Owin, Version=2.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.Owin.2.1.0\lib\net45\Microsoft.Owin.dll</HintPath>
+    <Reference Include="Microsoft.Owin, Version=3.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.3.1.0\lib\net45\Microsoft.Owin.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Owin.Security, Version=2.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Owin.Security.2.1.0\lib\net45\Microsoft.Owin.Security.dll</HintPath>
@@ -74,13 +74,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Migrations\201712051437383_ilk.cs" />
-    <Compile Include="Migrations\201712051437383_ilk.Designer.cs">
-      <DependentUpon>201712051437383_ilk.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201712052129117_iki.cs" />
-    <Compile Include="Migrations\201712052129117_iki.Designer.cs">
-      <DependentUpon>201712052129117_iki.cs</DependentUpon>
+    <Compile Include="Migrations\201712061011091_ilk.cs" />
+    <Compile Include="Migrations\201712061011091_ilk.Designer.cs">
+      <DependentUpon>201712061011091_ilk.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="MyContext.cs" />
@@ -97,11 +93,8 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201712051437383_ilk.resx">
-      <DependentUpon>201712051437383_ilk.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201712052129117_iki.resx">
-      <DependentUpon>201712052129117_iki.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201712061011091_ilk.resx">
+      <DependentUpon>201712061011091_ilk.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
