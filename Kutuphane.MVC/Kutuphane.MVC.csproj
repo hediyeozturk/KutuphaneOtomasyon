@@ -129,6 +129,7 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Login.css" />
     <Content Include="Content\Site.css" />
     <Content Include="data\flot-data.js" />
     <Content Include="data\morris-data.js" />
@@ -324,6 +325,7 @@
     <Content Include="Views\Kitap\Liste.cshtml" />
     <Content Include="Views\Uye\Index.cshtml" />
     <Content Include="Views\Odunc\Index.cshtml" />
+    <Content Include="Views\Hesap\Login.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -335,7 +337,6 @@
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
     <Folder Include="Views\Categories\" />
-    <Folder Include="Views\Hesap\" />
     <Folder Include="Views\Kullanici\" />
   </ItemGroup>
   <ItemGroup>

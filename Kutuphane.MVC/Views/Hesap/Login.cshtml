@@ -1,0 +1,50 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Login</title>
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/Login.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container">
+        <div class="card card-container">
+             <img class="profile-img-card" src="http://www.freepngimg.com/download/book/6-books-png-image-with-transparency-background.png" alt="" />   
+            <p id="profile-name" class="profile-name-card"></p>
+            <form class="form-signin">
+                <span id="reauth-email" class="reauth-email"></span>
+                <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+                <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+                <div id="remember" class="checkbox">
+                    <label>
+                        <input type="checkbox" value="remember-me"> Beni Hatırla
+                    </label>
+                </div>
+                <button class="btn btn-lg btn-primary btn-block btn-signin" type="submit">Giriş YAP</button>
+            </form><!-- /form -->
+            <a href="#" class="forgot-password">
+                Forgot the password?
+            </a>
+        </div><!-- /card-container -->
+    </div><!-- /container -->
+</body>
+</html>
+<script src="~/Scripts/jquery-3.2.1.min.js"></script>
+@*<script src="~/vendor/jquery/jquery.min.js"></script>*@
+<!-- Bootstrap Core JavaScript -->
+<script src="~/vendor/bootstrap/js/bootstrap.min.js"></script>
+<!-- Metis Menu Plugin JavaScript -->
+<script src="~/vendor/metisMenu/metisMenu.min.js"></script>
+<!-- Morris Charts JavaScript -->
+<script src="~/vendor/raphael/raphael.min.js"></script>
+<script src="~/vendor/morrisjs/morris.min.js"></script>
+<script src="~/data/morris-data.js"></script>
+<!-- Custom Theme JavaScript -->
+<script src="~/dist/js/sb-admin-2.js"></script>
+<script src="http://mymaplist.com/js/vendor/TweenLite.min.js"></script>

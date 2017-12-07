@@ -6,73 +6,66 @@
 <script src="~/Scripts/angular.js"></script>
 <script src="~/Scripts/angular-route.js"></script>
 <div>
-
+    <hr />
     <div class="row">
-        <div class="col-lg-12">
-            <h1 class="fa fa-3x"><b><i>Kitap İşlemleri</i></b></h1><hr />
+        <div class="col-lg-3 col-lg-offset-1">
+            <h1 class="fa fa-2x"><b><i>Kitap İşlemleri</i></b></h1>
+        </div>
+        <div class="col-lg-3 col-md-3">
+            <div class="panel panel-red">
+                <div class="panel-heading">
+                    <div class="row">
+                        <div class="col-xs-3 col-xs-offset-4">
+                            <i class="fa fa-list fa-4x"></i>
+                        </div>
+
+                    </div>
+                </div>
+                <a href="#!Liste">
+                    <div class="panel-footer">
+                        <span class="pull-left"><b>Kitapları Listele</b></span>
+                        <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                        <div class="clearfix"></div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+            <div class="panel panel-red">
+                <div class="panel-heading">
+                    <div class="row">
+                        <div class="col-xs-3 col-xs-offset-4">
+                            <i class="fa fa-plus fa-4x"></i>
+                        </div>
+
+                    </div>
+                </div>
+                <a href="#Ekle">
+                    <div class="panel-footer">
+                        <span class="pull-left"><b>Kitap Ekle</b></span>
+                        <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                        <div class="clearfix"></div>
+                    </div>
+                </a>
+            </div>
         </div>
     </div>
-    <div class="col-lg-6">
-        <div class="row">
-            <div class="col-lg-6 col-md-3">
-                <div class="panel panel-red">
-                    <div class="panel-heading">
-                        <div class="row">
-                            <div class="col-xs-3 col-xs-offset-4">
-                                <i class="fa fa-list fa-4x"></i>
-                            </div>
-
-                        </div>
-                    </div>
-                    <a href="#!Liste">
-                        <div class="panel-footer">
-                            <span class="pull-left"><b>Kitapları Listele</b></span>
-                            <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
-                            <div class="clearfix"></div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-
-            <div class="col-lg-6 col-md-6">
-                <div class="panel panel-red">
-                    <div class="panel-heading">
-                        <div class="row">
-                            <div class="col-xs-3 col-xs-offset-4">
-                                <i class="fa fa-plus fa-4x"></i>
-                            </div>
-
-                        </div>
-                    </div>
-                    <a href="#Ekle">
-                        <div class="panel-footer">
-                            <span class="pull-left"><b>Kitap Ekle</b></span>
-                            <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
-                            <div class="clearfix"></div>
-                        </div>
-                    </a>
-                </div>
-            </div>   
+    <hr />
+    <div class="row">
+        <div class="col-lg-7 panel">
+            <div ng-app="myApp" ng-view></div>
         </div>
-        <hr />
-
-        @*<div class="row">
-            <div class="col-lg-12">
+            @*<div class="col-lg-5">
                 Kitap<hr /> DETAY<hr />
                 dşfdşfldsşfdf<hr /><hr />
                 fşldsfldsşfd<hr /><hr />
                 Kitap<hr /> DETAY<hr />
                 dşfdşfldsşfdf<hr /><hr />
                 fşldsfldsşfd<hr /><hr />
-
-            </div>
-        </div>*@
-            
+            </div>*@
     </div>
-    <div class="col-lg-6 panel">
-    <div ng-app="myApp" ng-view></div>
-</div>
-    
+
+
 </div>
 <script>
     var app = angular.module("myApp", ["ngRoute"]);
