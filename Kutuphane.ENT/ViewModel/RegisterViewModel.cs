@@ -18,8 +18,13 @@ namespace Kutuphane.ENT.ViewModel
         public string Soyad { get; set; }
 
         [Required]
-        [Display(Name = "Kullanıcı Adı")]
-        public string KullaniciAdi { get; set; }
+        [Display(Name = "TC Kimlik No")]
+        [StringLength(11, ErrorMessage ="TC Kimlik No 11 haneli olmalıdır.")]
+        public string TCNo { get; set; }
+
+        [Required]
+        [EmailAddress]
+        public string Email { get; set; }
 
         [Required]
         [StringLength(20, MinimumLength = 5, ErrorMessage = "Şifreniz en az 5 karakter olmalıdır!")]
@@ -30,7 +35,7 @@ namespace Kutuphane.ENT.ViewModel
         [Required]
         [StringLength(20, MinimumLength =5, ErrorMessage ="Şifreniz en az 5 karakter olmalıdır")]
         [Display(Name = "Şifre Tekrar")]
-        [Compare("Password", ErrorMessage ="Şifreler uyuşmuyor")]
+        [Compare("Sifre", ErrorMessage ="Şifreler uyuşmuyor")]
         public string SifreTekrar { get; set; }
     }
 }
