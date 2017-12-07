@@ -74,6 +74,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Migrations\201712072158492_ilk.cs" />
+    <Compile Include="Migrations\201712072158492_ilk.Designer.cs">
+      <DependentUpon>201712072158492_ilk.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="MyContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -86,6 +91,11 @@
       <Project>{c87eabf8-ab25-4016-8407-2d8d59a89cc5}</Project>
       <Name>Kutuphane.ENT</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201712072158492_ilk.resx">
+      <DependentUpon>201712072158492_ilk.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
