@@ -74,9 +74,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Migrations\201712072158492_ilk.cs" />
-    <Compile Include="Migrations\201712072158492_ilk.Designer.cs">
-      <DependentUpon>201712072158492_ilk.cs</DependentUpon>
+    <Compile Include="Migrations\201712081433016_bir.cs" />
+    <Compile Include="Migrations\201712081433016_bir.Designer.cs">
+      <DependentUpon>201712081433016_bir.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201712081438444_biki.cs" />
+    <Compile Include="Migrations\201712081438444_biki.Designer.cs">
+      <DependentUpon>201712081438444_biki.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201712081453445_uc.cs" />
+    <Compile Include="Migrations\201712081453445_uc.Designer.cs">
+      <DependentUpon>201712081453445_uc.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="MyContext.cs" />
@@ -93,8 +101,14 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201712072158492_ilk.resx">
-      <DependentUpon>201712072158492_ilk.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201712081433016_bir.resx">
+      <DependentUpon>201712081433016_bir.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201712081438444_biki.resx">
+      <DependentUpon>201712081438444_biki.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201712081453445_uc.resx">
+      <DependentUpon>201712081453445_uc.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

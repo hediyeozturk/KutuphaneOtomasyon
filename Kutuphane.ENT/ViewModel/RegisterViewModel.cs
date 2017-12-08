@@ -27,15 +27,16 @@ namespace Kutuphane.ENT.ViewModel
         public string Email { get; set; }
 
         [Required]
-        [StringLength(20, MinimumLength = 5, ErrorMessage = "Şifreniz en az 5 karakter olmalıdır!")]
+        [StringLength(20, MinimumLength = 6, ErrorMessage = "Şifreniz en az 6 karakter olmalıdır!")]
         [Display(Name = "Şifre")]
         [DataType(DataType.Password)]
         public string Sifre { get; set; }
 
         [Required]
-        [StringLength(20, MinimumLength =5, ErrorMessage ="Şifreniz en az 5 karakter olmalıdır")]
+        [StringLength(20, MinimumLength =6, ErrorMessage ="Şifreniz en az 6 karakter olmalıdır")]
         [Display(Name = "Şifre Tekrar")]
         [Compare("Sifre", ErrorMessage ="Şifreler uyuşmuyor")]
+        [DataType(DataType.Password)]
         public string SifreTekrar { get; set; }
     }
 }

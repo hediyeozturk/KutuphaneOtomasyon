@@ -10,17 +10,12 @@ using System.Threading.Tasks;
 
 namespace Kutuphane.DL
 {
-    public class MyContext:IdentityDbContext<Kullanici>
+    public class MyContext:IdentityDbContext
     {
         public MyContext():base("name=Baglanti")
         {
 
         }
-        public virtual DbSet<Uye> Uye { get; set; }
-        public virtual DbSet<Kitap> Kitap { get; set; }
-        public virtual DbSet<Odunc> Odunc { get; set; }
-        public virtual DbSet<Yazar> Yazar { get; set; }
-        public virtual DbSet<Kategori> Kategori { get; set; }
 
         protected override void OnModelCreating(System.Data.Entity.DbModelBuilder modelBuilder)
         {
@@ -29,8 +24,13 @@ namespace Kutuphane.DL
                 .ToTable("Kullanici", "dbo").Property(p => p.Id).HasColumnName("KullaniciID");
             modelBuilder.Entity<Kullanici>()
                 .ToTable("Kullanici", "dbo").Property(p => p.Id).HasColumnName("KullaniciID");
-
-
         }
+
+        public virtual DbSet<Uye> Uyeler { get; set; }
+        public virtual DbSet<Kitap> Kitaplar { get; set; }
+        public virtual DbSet<Odunc> Oduncler { get; set; }
+        public virtual DbSet<Yazar> Yazarlar { get; set; }
+        public virtual DbSet<Kategori> Kategoriler { get; set; }
+
     }
 }
