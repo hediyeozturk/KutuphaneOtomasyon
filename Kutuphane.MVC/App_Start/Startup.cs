@@ -20,5 +20,6 @@ namespace Kutuphane.MVC.App_Start
                 LoginPath=new PathString("/Hesap/Login")
             });
         }
+
     }
 }

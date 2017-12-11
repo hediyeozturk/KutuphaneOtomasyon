@@ -18,6 +18,7 @@ namespace Kutuphane.MVC.Controllers
         // GET: Hesap
         public ActionResult Register()
         {
+            SeedData.Seed();
             return View();
         }
 
@@ -29,30 +30,8 @@ namespace Kutuphane.MVC.Controllers
  
             var userManager = MemberShipTools.NewUserManager();
 
-            var roleManager = MemberShipTools.NewRoleManager();
             var checkUser = userManager.FindByName(model.TCNo);
 
-            const string roleName = "Admin";
-            var role = roleManager.FindByName(roleName);
-            if (role == null)
-            {
-                role = new Rol() { Name="Admin", Aciklama="Site Yöneticisi"};
-                roleManager.Create(role);
-            }
-            const string roleName2 = "User";
-            role = roleManager.FindByName(roleName2);
-            if (role == null)
-            {
-                role = new Rol() { Name = "User"};
-                roleManager.Create(role);
-            }
-            const string roleName3 = "Passive";
-            role = roleManager.FindByName(roleName3);
-            if (role == null)
-            {
-                role = new Rol() { Name = "Passive"};
-                roleManager.Create(role);
-            }
 
 
             if (checkUser!=null)
