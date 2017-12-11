@@ -27,50 +27,66 @@ namespace Kutuphane.MVC.Controllers
         {
             if (!ModelState.IsValid) return View(model);
  
-            var kullaniciManager = MemberShipTools.YeniKullaniciManager();
-            var checkKullanici = kullaniciManager.FindByName(model.TCNo);
+            var userManager = MemberShipTools.NewUserManager();
 
-            if (checkKullanici!=null)
+            var roleManager = MemberShipTools.NewRoleManager();
+            var checkUser = userManager.FindByName(model.TCNo);
+
+            const string roleName = "Admin";
+            var role = roleManager.FindByName(roleName);
+            if (role == null)
+            {
+                role = new Rol() { Name="Admin", Aciklama="Site Yöneticisi"};
+                roleManager.Create(role);
+            }
+            const string roleName2 = "User";
+            role = roleManager.FindByName(roleName2);
+            if (role == null)
+            {
+                role = new Rol() { Name = "User"};
+                roleManager.Create(role);
+            }
+            const string roleName3 = "Passive";
+            role = roleManager.FindByName(roleName3);
+            if (role == null)
+            {
+                role = new Rol() { Name = "Passive"};
+                roleManager.Create(role);
+            }
+
+
+            if (checkUser!=null)
             {
                 ModelState.AddModelError(string.Empty, "Bu TC No sistemde kayıtlı");
                 return View(model);
             }
 
-            checkKullanici = kullaniciManager.FindByEmail(model.Email);
-            if (checkKullanici!=null)
+            checkUser = userManager.FindByEmail(model.Email);
+            if (checkUser!=null)
             {
                 ModelState.AddModelError(string.Empty, "Bu mail adresi sistemde kayıtlı");
                 return View(model);
             }
 
-            Kullanici kullanici = new Kullanici()
+            var user = new Kullanici()
             {
                 Ad=model.Ad,
                 Soyad=model.Soyad,
                 Email=model.Email,
-                UserName=model.TCNo,
-
-               
+                UserName=model.TCNo,        
             };
 
-            var response = kullaniciManager.Create(kullanici, model.Sifre);
+            var response = userManager.Create(user, model.Sifre);
 
             if (response.Succeeded)
             {
-                string siteUrl = Request.Url.Scheme + Uri.SchemeDelimiter + Request.Url.Host +
-                                 (Request.Url.IsDefaultPort ? "" : ":" + Request.Url.Port);
-                if (kullaniciManager.Users.Count() == 1)
+                if (userManager.Users.ToList().Count() == 1)
                 {
-                   
-                    kullanici.EmailConfirmed = true;
-
-                   
-
-                    kullaniciManager.AddToRole(kullanici.Id, "Admin");
+                    userManager.AddToRole(user.Id, "Admin");
                 }
                 else
                 {
-                    kullaniciManager.AddToRole(kullanici.Id, "Passive");
+                    userManager.AddToRole(user.Id, "Passive");
                 }
                 return RedirectToAction("Login", "Hesap");
             }

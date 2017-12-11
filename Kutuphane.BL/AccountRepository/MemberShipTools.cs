@@ -12,12 +12,10 @@ namespace Kutuphane.BL.AccountRepository
 {
     public class MemberShipTools
     {
-        public static UserStore<Kullanici> YeniKullaniciStore() => new UserStore<Kullanici>(new MyContext());
+        public static UserStore<Kullanici> NewUserStore() => new UserStore<Kullanici>(new MyContext());
+        public static UserManager<Kullanici> NewUserManager() => new UserManager<Kullanici>(NewUserStore());
 
-        public static UserManager<Kullanici> YeniKullaniciManager() => new UserManager<Kullanici>(YeniKullaniciStore());
-
-        public static RoleStore<Rol> YeniRolStore() => new RoleStore<Rol>(new MyContext());
-
-        public static RoleManager<Rol> YeniRolManager() => new RoleManager<Rol>(YeniRolStore());
+        public static RoleStore<Rol> NewRoleStore() => new RoleStore<Rol>(new MyContext());
+        public static RoleManager<Rol> NewRoleManager() => new RoleManager<Rol>(NewRoleStore());
     }
 }

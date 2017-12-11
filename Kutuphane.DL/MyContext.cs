@@ -16,5 +16,11 @@ namespace Kutuphane.DL
         {
 
         }
+
+        public virtual DbSet<Kitap> Kitap { get; set; }
+        public virtual DbSet<Yazar> Yazar { get; set; }
+        public virtual DbSet<Kategori> Kategori { get; set; }
+        public virtual DbSet<Uye> Uye { get; set; }
+        public virtual DbSet<Odunc> Odunc { get; set; }
     }
 }
