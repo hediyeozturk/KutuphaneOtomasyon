@@ -9,7 +9,6 @@ using System.Threading.Tasks;
 
 namespace Kutuphane.ENT.IdentityModel
 {
-    [Table("Kullanici")]
     public class Kullanici : IdentityUser
     {
         [StringLength(25)]

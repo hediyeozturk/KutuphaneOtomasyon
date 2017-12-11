@@ -49,6 +49,7 @@ namespace Kutuphane.MVC.Controllers
                 Soyad=model.Soyad,
                 Email=model.Email,
                 UserName=model.TCNo,
+
                
             };
 

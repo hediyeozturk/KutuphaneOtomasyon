@@ -7,13 +7,13 @@ namespace Kutuphane.DL.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.2.0-61023")]
-    public sealed partial class uc : IMigrationMetadata
+    public sealed partial class bir : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(uc));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(bir));
         
         string IMigrationMetadata.Id
         {
-            get { return "201712081453445_uc"; }
+            get { return "201712110036167_bir"; }
         }
         
         string IMigrationMetadata.Source
